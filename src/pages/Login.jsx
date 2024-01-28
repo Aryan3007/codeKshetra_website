@@ -13,7 +13,7 @@ const Login = () => {
   const handelLogin=async(e)=>{
     e.preventDefault()
     try {
-      const res=await axios.post('https://dbph-server2.onrender.com/auth/login',{email, password})
+      const res=await axios.post('http://localhost:3001/auth/login',{email, password})
       if (res?.data?.success) {
         toast.success(res.data.message)
         localStorage.setItem("auth", JSON.stringify(res.data));

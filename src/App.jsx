@@ -6,6 +6,10 @@ import Register from "./pages/Register"
 import Login from "./pages/Login"
 import Community from "./pages/Community"
 import { Toaster } from "react-hot-toast"
+import FalseUrgency from "./pages/FalseUrgency"
+import SocialProof from "./pages/SocialProof"
+import Baskit from "./pages/Baskit"
+import Forced from "./pages/Forced"
 
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
        <Routes>
     <Route path="/" element={<Homepage />} />
     <Route path="/dashboard" element={<Dashboard />} />
+    <Route path="/falseurgency" element={<FalseUrgency />} />
+    <Route path="/socialproof" element={<SocialProof />} />
+    <Route path="/baskit" element={<Baskit />} />
+    <Route path="/forced" element={<Forced />} />
     <Route path="/community" element={<Community />} />
     <Route path="/register" element={<Register />} />
     <Route path="/login" element={<Login />} />

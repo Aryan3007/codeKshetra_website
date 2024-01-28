@@ -42,20 +42,20 @@ const LoginedUser = () => {
       <div className="flex flex-col p-3 gap-3 ">
         <div className="flex gap-4 items-center">
           <IoLocation size={22} color="#000000" />
-          <p>{loginedUser.location}</p>
+          <p>Jabalpur</p>
         </div>
         <div className="flex gap-4 items-center">
           <MdWork size={22} color="#000000" />
-          <p>{loginedUser.occupation}</p>
+          <p>Software Developer</p>
         </div>
       </div>
       <hr />
       <div className="flex justify-between p-3  flex-col">
         <div>
-          <p>Who viewed your profile : {loginedUser.viewedProfile}</p>
+          <p>Who viewed your profile : 456</p>
         </div>
         <div>
-          <p>Total Impressions : {loginedUser.impressions}</p>
+          <p>Total Impressions : 8678</p>
         </div>
       </div>
       <hr />

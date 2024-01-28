@@ -26,7 +26,7 @@ const Homepage = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-              <a
+              <Link to="/falseurgency"
                 className="block glass rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                 href="/accountant"
               >
@@ -54,9 +54,10 @@ const Homepage = () => {
                 <p className="hidden text-white sm:mt-1 sm:block sm:text-sm ">
                 The Scarcity Pattern induces (truthfully or falsely) the impression that goods or services...
                 </p>
-              </a>
+              </Link>
 
-              <a
+              <Link 
+              to="/socialproof"
                 className="block glass rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                 href="/accountant"
               >
@@ -84,9 +85,10 @@ const Homepage = () => {
                 <p className="hidden text-white sm:mt-1 sm:block sm:text-sm ">
                 Social Proof is another dark pattern of this category. Positive product reviews or activity...
                 </p>
-              </a>
+              </Link>
 
-              <a
+              <Link
+              to="/baskit"
                 className="block glass rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                 href="/accountant"
               >
@@ -109,14 +111,15 @@ const Homepage = () => {
                   </svg>
                 </span>
 
-                <h2 className="mt-2 text-white font-bold">Sneak into Basket</h2>
+                <h2 className="mt-2 text-white font-bold"> Basket Sneaking</h2>
 
                 <p className="hidden text-white sm:mt-1 sm:block sm:text-sm ">
                 The Sneak into Basket pattern places an additional, unwanted object in the shopping cart...
                 </p>
-              </a>
+              </Link>
 
-              <a
+              <Link
+              to="/forced"
                 className="block glass rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                 href="/accountant"
               >
@@ -144,9 +147,10 @@ const Homepage = () => {
                 <p className="hidden text-white sm:mt-1 sm:block sm:text-sm ">
                 The Forced Continuity pattern automatically renews free or low-cost trial subscriptions...
                 </p>
-              </a>
+              </Link>
 
-              <a
+              <Link
+              to="/baskit"
                 className="block glass rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                 href="/accountant"
               >
@@ -174,9 +178,10 @@ const Homepage = () => {
                 <p className="hidden text-white sm:mt-1 sm:block sm:text-sm ">
                 The Hidden Cost pattern reveals additional costs e.g. for certain payment methods, shipping...
                 </p>
-              </a>
+              </Link>
 
-              <a
+              <Link
+              to='/falseurgency'
                 className="block glass rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                 href="/accountant"
               >
@@ -204,7 +209,7 @@ const Homepage = () => {
                 <p className="hidden text-white sm:mt-1 sm:block sm:text-sm ">
                 This is illustrated through a running clock or a lapsing bar. You can watch as the desired...
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -215,13 +220,11 @@ const Homepage = () => {
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
           <header className="text-center">
             <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
-              Report Collection
+              Previous Analysis
             </h2>
 
-            <p className="mx-auto mt-4 max-w-md text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-              praesentium cumque iure dicta incidunt est ipsam, officia dolor
-              fugit natus?
+            <p className="mx-auto mt-4 max-w-2xl text-gray-500">
+            The previous analysis provided crucial insights by scrutinizing data trends and patterns. It uncovered valuable correlations and anomalies, laying a foundation for informed decision-making. These findings are pivotal for understanding key aspects and navigating future challenges effectively.
             </p>
           </header>
 
@@ -229,22 +232,20 @@ const Homepage = () => {
             <li>
               <a href="#" className="group block overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  src="https://logowik.com/content/uploads/images/amazon6707.jpg"
                   alt=""
-                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                  className="h-[350px] border-2 border-grey-700 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />
 
                 <div className="relative bg-white pt-3">
-                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                    Basic Tee
-                  </h3>
+                  
 
                   <p className="mt-2">
                     <span className="sr-only"> Regular Price </span>
 
-                    <span className="tracking-wider text-gray-900">
+                    <span className="tracking-wider flex justify-center items-center py-2 bg-red-400 text-gray-900">
                       {" "}
-                      £24.00 GBP{" "}
+                     Severity Level : Extreme{" "}
                     </span>
                   </p>
                 </div>
@@ -254,22 +255,20 @@ const Homepage = () => {
             <li>
               <a href="#" className="group block overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  src="https://logowik.com/content/uploads/images/agoda7659.jpg"
                   alt=""
-                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                  className="h-[350px] border-2 border-grey-700 object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />
 
                 <div className="relative bg-white pt-3">
-                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                    Basic Tee
-                  </h3>
+                
 
                   <p className="mt-2">
                     <span className="sr-only"> Regular Price </span>
 
-                    <span className="tracking-wider text-gray-900">
+                    <span className="tracking-wider flex justify-center items-center py-2 bg-orange-300 text-gray-900">
                       {" "}
-                      £24.00 GBP{" "}
+                   Severity Level : Medium{" "}
                     </span>
                   </p>
                 </div>
@@ -279,22 +278,20 @@ const Homepage = () => {
             <li>
               <a href="#" className="group block overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  src="https://logowik.com/content/uploads/images/106_trivago_logo.jpg"
                   alt=""
-                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                  className="h-[350px] w-full  border-2 border-grey-700 object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />
 
                 <div className="relative bg-white pt-3">
-                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                    Basic Tee
-                  </h3>
+                  
 
                   <p className="mt-2">
                     <span className="sr-only"> Regular Price </span>
 
-                    <span className="tracking-wider text-gray-900">
+                    <span className="tracking-wider py-2 flex justify-center items-center bg-yellow-300 text-gray-900">
                       {" "}
-                      £24.00 GBP{" "}
+                    Severity Level : Average{" "}
                     </span>
                   </p>
                 </div>
@@ -304,22 +301,20 @@ const Homepage = () => {
             <li>
               <a href="#" className="group block overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  src="https://pluspng.com/img-png/logo-flipkart-png-flipkart-coupons-discount-offers-promo-codes-200.png"
                   alt=""
-                  className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                  className="h-[350px] w-full border-2 border-grey-700 object-contain transition duration-500 group-hover:scale-105 sm:h-[450px]"
                 />
 
                 <div className="relative bg-white pt-3">
-                  <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                    Basic Tee
-                  </h3>
+                  
 
                   <p className="mt-2">
                     <span className="sr-only"> Regular Price </span>
 
-                    <span className="tracking-wider text-gray-900">
+                    <span className="tracking-wider bg-green-300 py-2 flex justify-center items-center text-gray-900">
                       {" "}
-                      £24.00 GBP{" "}
+                     Severity level : Low{" "}
                     </span>
                   </p>
                 </div>
