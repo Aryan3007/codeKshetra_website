@@ -8,7 +8,7 @@ const Dashboard = () => {
   const getAllReports = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3001/dashboard/weburls"
+        "https://dbph-server2.onrender.com/dashboard/weburls"
       );
       const { reports } = response.data;
 
@@ -22,7 +22,7 @@ const Dashboard = () => {
   const handeldelete = async (id) => {
     console.log(id);
     try {
-      const res = await axios.delete("http://localhost:3001/dashboard/deleteReport", {
+      const res = await axios.delete("https://dbph-server2.onrender.com/dashboard/deleteReport", {
         data: { id },
       });
       if (res?.data?.success) {

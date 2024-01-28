@@ -46,7 +46,7 @@ const CreatePost = () => {
 
   const getAllPosts = useCallback(async () => {
     try {
-      const { data } = await axios.get("http://localhost:3001/post/getall-post");
+      const { data } = await axios.get("https://dbph-server2.onrender.com/post/getall-post");
       setPosts(data.posts);
     } catch (error) {
       console.error(error);
@@ -64,7 +64,7 @@ const CreatePost = () => {
       formData.append("userId", userId);
 
       const { data } = await axios.post(
-        "http://localhost:3001/post/create-post",
+        "https://dbph-server2.onrender.com/post/create-post",
         formData
       );
 

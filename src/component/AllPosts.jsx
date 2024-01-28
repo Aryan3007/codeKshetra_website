@@ -14,7 +14,7 @@ const AllPosts = () => {
         const parsedAuthData = authData ? JSON.parse(authData) : {};
         setLoginedUser(parsedAuthData.user);
 
-        const { data } = await axios.get("http://localhost:3001/post/getall-post");
+        const { data } = await axios.get("https://dbph-server2.onrender.com/post/getall-post");
         setPosts(data.posts);
       } catch (error) {
         console.error(error);
@@ -64,7 +64,7 @@ const AllPosts = () => {
                 <div className="my-2">
                   <img
                     className="h-full w-full overflow-hidden"
-                    src={`http://localhost:3001/post/post-photo/${post._id}`}
+                    src={`https://dbph-server2.onrender.com/post/post-photo/${post._id}`}
                     alt=""
                   />
                 </div>
