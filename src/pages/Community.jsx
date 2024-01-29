@@ -6,7 +6,7 @@ import LoginedUser from '../component/logineduser'
 const Community = () => {
   return (
     <div className='p-12 flex gap-12 justify-between'>
-        <div className='mt-4 fixed'>
+        <div className='mt-4 fixed w-1/3'>
       <CreatePost/>
       <LoginedUser/>
         </div>

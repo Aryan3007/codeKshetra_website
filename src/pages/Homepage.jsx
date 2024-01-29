@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import Footer from "../component/Footer";
 
@@ -17,12 +18,7 @@ const Homepage = () => {
               Dark patterns are design patterns that lead users to act in a certain way that is contrary to their interests, exploiting design power unilaterally in the interests of their creator.
               </p>
 
-              <a
-                href="#"
-                className="mt-8 inline-block rounded bg-white px-12 py-3 text-sm font-medium text-black transition hover:bg-zinc-400 focus:outline-none focus:ring focus:ring-yellow-400"
-              >
-                Get Started Today
-              </a>
+              
             </div>
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
@@ -341,7 +337,7 @@ const Homepage = () => {
           >
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
               <h2 className="font-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+              Q: What are dark patterns in user experience design?
               </h2>
 
               <svg
@@ -361,17 +357,14 @@ const Homepage = () => {
             </summary>
 
             <p className="mt-4 px-4 leading-relaxed text-gray-700">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-              veritatis molestias culpa in, recusandae laboriosam neque aliquid
-              libero nesciunt voluptate dicta quo officiis explicabo
-              consequuntur distinctio corporis earum similique!
+            A: Dark patterns are design choices in user interfaces that intentionally manipulate or deceive users, often to encourage unintended actions, such as making purchases, subscribing to services, or sharing personal information.
             </p>
           </details>
 
           <details className="group [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
               <h2 className="font-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+              Q: How do dark patterns impact user trust?
               </h2>
 
               <svg
@@ -391,17 +384,14 @@ const Homepage = () => {
             </summary>
 
             <p className="mt-4 px-4 leading-relaxed text-gray-700">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-              veritatis molestias culpa in, recusandae laboriosam neque aliquid
-              libero nesciunt voluptate dicta quo officiis explicabo
-              consequuntur distinctio corporis earum similique!
+            A: Dark patterns erode user trust by employing deceptive tactics. When users feel manipulated or misled, it can lead to a negative perception of the brand or service, hindering long-term customer relationships
             </p>
           </details>
 
           <details className="group [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
               <h2 className="font-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+              Q: What are common examples of dark patterns?
               </h2>
 
               <svg
@@ -421,17 +411,14 @@ const Homepage = () => {
             </summary>
 
             <p className="mt-4 px-4 leading-relaxed text-gray-700">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-              veritatis molestias culpa in, recusandae laboriosam neque aliquid
-              libero nesciunt voluptate dicta quo officiis explicabo
-              consequuntur distinctio corporis earum similique!
+            A: Examples include hidden costs, forced continuity, sneak into basket, confirmshaming, and misdirection. These patterns exploit cognitive biases and user behaviors to drive actions that may not be in the user's best interest.
             </p>
           </details>
 
           <details className="group [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
               <h2 className="font-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+              Q: How can users identify and avoid dark patterns?
               </h2>
 
               <svg
@@ -451,17 +438,14 @@ const Homepage = () => {
             </summary>
 
             <p className="mt-4 px-4 leading-relaxed text-gray-700">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-              veritatis molestias culpa in, recusandae laboriosam neque aliquid
-              libero nesciunt voluptate dicta quo officiis explicabo
-              consequuntur distinctio corporis earum similique!
+            A: Users can stay vigilant by carefully reviewing information during the interaction, reading terms and conditions, and being wary of overly persuasive or coercive design elements. Being informed about common dark patterns helps users make more conscious choices online.
             </p>
           </details>
 
           <details className="group [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
               <h2 className="font-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing?
+              Q: Why are dark patterns considered unethical?
               </h2>
 
               <svg
@@ -481,10 +465,7 @@ const Homepage = () => {
             </summary>
 
             <p className="mt-4 px-4 leading-relaxed text-gray-700">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-              veritatis molestias culpa in, recusandae laboriosam neque aliquid
-              libero nesciunt voluptate dicta quo officiis explicabo
-              consequuntur distinctio corporis earum similique!
+            A: Dark patterns prioritize business goals over user well-being, employing manipulative tactics that disregard transparency and user autonomy. This unethical approach can harm the user experience and damage a company's reputation.
             </p>
           </details>
         </div>

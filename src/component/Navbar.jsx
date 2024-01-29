@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Community', href: '/community', current: false },
-  { name: 'About us', href: '/aboutus', current: false },
+  { name: 'About us', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
 ]
 
@@ -15,6 +15,22 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+
+  const [loginedUser, setLoginedUser] = useState({});
+
+  useEffect(() => {
+    // Get the user data from localStorage
+    const authData = localStorage.getItem("auth");
+
+    // Parse the string to a JavaScript object
+    const parsedAuthData = authData ? JSON.parse(authData) : {};
+
+    // Set the state with the parsed user data
+    setLoginedUser(parsedAuthData.user);
+  }, []); // Run this effect only once when the component mounts
+
+
+
   return (
     <Disclosure as="nav" className="bg-gray-50 shadow-lg">
       {({ open }) => (
@@ -63,7 +79,7 @@ export default function Navbar() {
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div className='flex gap-2 items-center'>
-                    <h1 className='text-semibold'>Aryan</h1>
+                    <h1 className='text-semibold'>{loginedUser.firstname}</h1>
                     <Menu.Button className="relative flex rounded-full text-sm">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>

@@ -10,6 +10,8 @@ import FalseUrgency from "./pages/FalseUrgency"
 import SocialProof from "./pages/SocialProof"
 import Baskit from "./pages/Baskit"
 import Forced from "./pages/Forced"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
        <Routes>
     <Route path="/" element={<Homepage />} />
     <Route path="/dashboard" element={<Dashboard />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/contact" element={<Contact />} />
     <Route path="/falseurgency" element={<FalseUrgency />} />
     <Route path="/socialproof" element={<SocialProof />} />
     <Route path="/baskit" element={<Baskit />} />
