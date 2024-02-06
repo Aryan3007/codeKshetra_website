@@ -66,7 +66,7 @@ const BotModel = () => {
               &#8203;
             </span>
 
-            <div className="relative inline-block h-[600px] px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+            <div className="relative inline-block h-[600px] px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right  sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
               <div className="flex items-center justify-center">
                 <img className="h-36" src="https://st3.depositphotos.com/8950810/17657/v/450/depositphotos_176577870-stock-illustration-cute-smiling-funny-robot-chat.jpg" alt="" />
               </div>
@@ -85,7 +85,7 @@ const BotModel = () => {
                   }}
                   name=""
                   id=""
-                  cols="40"
+                  cols="30"
                   className="border focus:underline-none rounded-md p-3 border-zinc-300"
                   rows="4"
                 ></textarea>
@@ -113,7 +113,7 @@ const BotModel = () => {
                 <div className="sm:flex fixed bottom-0 mb-4 w-80 flex justify-between sm:items-center">
                   <button
                     onClick={() => setIsOpen(false)}
-                    className="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:mt-0 sm:w-auto sm:mx-2 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
+                    className="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide text-gray-900 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:mt-0 sm:w-auto sm:mx-2 dark:text-gray-900 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
                   >
                     Close
                   </button>
