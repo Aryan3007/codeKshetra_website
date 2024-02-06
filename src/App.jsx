@@ -12,6 +12,7 @@ import Baskit from "./pages/Baskit"
 import Forced from "./pages/Forced"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import Laws from "./pages/Laws"
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
     <Route path="/community" element={<Community />} />
     <Route path="/register" element={<Register />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/laws" element={<Laws />} />
     
     </Routes>
     </div>

@@ -9,13 +9,13 @@ const About = () => {
       <section>
   <div className="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-      <div className="bg-blue-600 p-8 md:p-12 lg:px-16 lg:py-24">
+      <div className=" p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl text-left">
-          <h2 className="text-2xl font-bold text-white md:text-3xl">
+          <h2 className="text-2xl font-bold text-black md:text-3xl">
           Navigating Boundaries, Crafting Experiences – Welcome to Dark_Buster, Where Digital Innovation Takes Center Stage
           </h2>
 
-          <p className="hidden text-left text-white/90 sm:mt-4 sm:block">
+          <p className="hidden text-left text-black/90 sm:mt-4 sm:block">
             
 Welcome to our innovative digital platform where user experience is not just a journey; it's an intricately crafted adventure. At Dark_Buster, we pride ourselves on pushing the boundaries of design to create an immersive online environment. Our commitment to user engagement goes beyond conventional norms, employing strategic elements to guide and captivate our audience. We believe in a seamless fusion of technology and psychology, tailoring every interaction to ensure optimal outcomes. Join us as we redefine the digital landscape, where every click, every choice, is a step into a meticulously curated user experience. At Dark_Buster, we don't just design websites; we design experiences that leave a lasting imprint.
           </p>
@@ -24,7 +24,7 @@ Welcome to our innovative digital platform where user experience is not just a j
             <Link
             to="/"
         
-              className="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
+              className="inline-block rounded border border-black bg-black px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-black focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Go to Home
             </Link>

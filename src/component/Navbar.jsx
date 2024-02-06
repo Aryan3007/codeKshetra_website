@@ -1,11 +1,14 @@
+/* eslint-disable no-unused-vars */
 import { Fragment, useEffect, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import BotModel from './BotModel'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Community', href: '/community', current: false },
+  { name: 'Legal Action', href: '/laws', current: false },
   { name: 'About us', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
 ]
@@ -17,6 +20,7 @@ function classNames(...classes) {
 export default function Navbar() {
 
   const [loginedUser, setLoginedUser] = useState({});
+  const [question, setQuestion] = useState('')
 
   useEffect(() => {
     // Get the user data from localStorage
@@ -39,7 +43,7 @@ export default function Navbar() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -62,8 +66,8 @@ export default function Navbar() {
                         key={item.name}
                       to={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-black' : 'text-gray-900 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          item.current ? 'bg-gray-900 text-black' : 'text-gray-900 hover:bg-gray-900 hover:text-white',
+                          'rounded px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -78,8 +82,8 @@ export default function Navbar() {
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
-                  <div className='flex gap-2 items-center'>
-                    <h1 className='text-semibold'>{loginedUser.firstname}</h1>
+                  <div className='flex gap-2 '>
+                  
                     <Menu.Button className="relative flex rounded-full text-sm">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>

@@ -1,10 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import Footer from "../component/Footer";
+import BotModel from "../component/BotModel";
 
 const Homepage = () => {
   return (
     <>
+    <div className="fixed bottom-4  rounded-lg overflow-hidden flex items-center right-4 z-40 bg-black">
+      
+    <BotModel/>
+    </div>
       {/* frontpage */}
       <section className="h-full lg:h-screen backgroun1 w-full flex justify-center items-center">
         <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
